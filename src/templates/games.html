@@ -1,0 +1,69 @@
+<html>
+
+<head>
+	<title>Homework</title>
+	<meta charset="UTF-8" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>
+</head>
+
+<body>
+	<div id="games"> </div>
+	<div id="template">
+
+		<h3 class="game-title"> </h3>
+		<h4 class="game-id"> </h4>
+
+		<p class="game-img"> </p>
+
+		<p class="game-description"> </p>
+
+		<div>
+			<button class="game-edit"> Edit </button>
+			<button class="game-delete"> Delete </button>
+		</div>
+	</div>
+	<br>
+	<br>
+	<div>
+		<form>
+			<fieldset>
+			<legend>Add a new game:</legend>
+			<label for="title">Title: </label>
+			<input class="new-title" name="title" placeholder="New Game Title"> </input>
+			<br>
+			<br>
+			<label for="description">Description: </label>
+			<textarea placeholder="New Game Description" class="new-description" name="description" cols="30" rows="4"> </textarea>
+			<br>
+			<br>
+			<label for="date">Release date: </label>
+			<input class="release-date" name="date" placeholder="Release Date"> </input>
+			<br>
+			<br>
+			<label for="publisher-name">Publisher: </label>
+			<input class="publisher" name="publisher-name" placeholder="Publisher"> </input>
+			<br>
+			<br>
+			<label for="g-genre">Genre:</label>
+			<input class="genre" name="g-genre" placeholder="Genre"> </input>
+			<br>
+			<br>
+			<label for="image">Image URL: </label>
+			<input class="image-url" name="image" placeholder="Image URL"> </input>
+			<br>
+			<br>
+			<button class="add-new"> Add new game </button>
+		</fieldset>
+		 </form>
+		<br>
+		<button class="refresh-games"> Refresh API </button>
+	</div>
+
+	<script src="../models/Game.js"></script>
+	<script src="../models/Games.js"></script>
+	<script src="../views/games.js"></script>
+	
+</body>
+
+</html>
